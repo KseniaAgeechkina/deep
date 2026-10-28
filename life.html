@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="ru">
+  <!-- Настройки страницы и подключение стилей -->
+  <!-- Настройки страницы и подключение стилей -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Глубже — интерактивный путеводитель по глубинам океана и необычным морским обитателям">
+    <meta name="theme-color" content="#061b28">
+    <title>
+      Глубже — жизнь в темноте
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-page="life">
+    <a class="skip" href="#main">
+      К содержанию
+    </a>
+    <canvas id="particles" aria-hidden="true">
+    </canvas>
+    <div class="cursor-halo" aria-hidden="true">
+    </div>
+    <!-- Шапка и навигация -->
+    <!-- Шапка и навигация -->
+    <header class="header">
+      <a class="brand" href="index.html">
+        ГЛУБЖЕ
+        <span>
+          ТАЙНЫ ОКЕАНА
+        </span>
+      </a>
+      <button class="menu" aria-label="Открыть меню" aria-expanded="false">
+        <span aria-hidden="true">
+          ≋
+        </span>
+      </button>
+      <nav aria-label="Основная навигация">
+        <a href="index.html" >
+          Под поверхностью
+        </a>
+        <a href="life.html" aria-current=page>
+          Жизнь в темноте
+        </a>
+      </nav>
+      <a class="header-link" href="life.html">
+        ЖИЗНЬ НА ГЛУБИНЕ
+      </a>
+    </header>
+    <!-- Основное содержимое -->
+    <!-- Основное содержимое -->
+    <main id="main">
+      <!-- Раздел: life-hero -->
+      <!-- Раздел: life-hero -->
+      <section class="life-hero section">
+        <div>
+          <span class="eyebrow">
+            <span class="signal">
+            </span>
+            02 / ЖИЗНЬ В ТЕМНОТЕ
+          </span>
+          <h1>
+            СВЕТ ИСЧЕЗАЕТ.
+            <br>
+            <em>
+              ЖИЗНЬ — НЕТ.
+            </em>
+          </h1>
+          <p>
+            Когда привычные ориентиры пропадают, природа находит новые решения. Светящиеся приманки, необычные плавники и большие глаза — здесь у каждой формы есть своя история.
+          </p>
+          <a class="text-link" href="#creatures">
+            ПОЗНАКОМИТЬСЯ БЛИЖЕ
+          </a>
+        </div>
+        <div class="life-hero-art" aria-hidden="true">
+          <img src="assets/dumbo.svg" alt="">
+          <div class="specimen-circle">
+          </div>
+        </div>
+      </section>
+      <!-- Раздел: creatures -->
+      <!-- Раздел: creatures -->
+      <section class="creatures section" id="creatures">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">
+              01 / ЧЕТЫРЕ ОБИТАТЕЛЯ ГЛУБИН
+            </span>
+            <h2>
+              НЕОБЫЧНЫЕ.
+              <br>
+              <em>
+                НАСТОЯЩИЕ.
+              </em>
+            </h2>
+          </div>
+          <button class="light-toggle" id="light-toggle" aria-pressed="false">
+            <span class="toggle-dot">
+            </span>
+            ПРИГЛУШИТЬ СВЕТ
+          </button>
+        </div>
+        <p class="gallery-note">
+          Нажми «Узнать больше», чтобы раскрыть карточку. Иллюстрации художественные; свечение в режиме темноты — визуальный эффект, а не указание на биолюминесценцию каждого вида.
+        </p>
+        <div class="creature-grid">
+          <article class="creature-card" id="angler">
+            <div class="creature-art">
+              <span class="specimen">
+                ОБЪЕКТ / 01
+              </span>
+              <img src="assets/angler.svg" alt="Художественная иллюстрация: удильщик">
+              <span class="art-note">
+                АВТОРСКАЯ СТИЛИЗАЦИЯ
+              </span>
+            </div>
+            <div class="creature-copy">
+              <span class="eyebrow">
+                ПРИМАНКА, КОТОРАЯ СВЕТИТСЯ
+              </span>
+              <h3>
+                Удильщик
+              </h3>
+              <p>
+                Вместо долгой погони многие глубоководные удильщики подманивают добычу светящейся приманкой перед пастью.
+              </p>
+              <details>
+                <summary>
+                  Узнать больше
+                  <span>
+                    +
+                  </span>
+                </summary>
+                <p>
+                  Светящийся вырост помогает привлечь животное достаточно близко. Это пример того, как биолюминесценция становится инструментом охоты. Глубоководные удильщики — разнообразная группа, а не один вид.
+                </p>
+              </details>
+            </div>
+          </article>
+          <article class="creature-card" id="viper">
+            <div class="creature-art">
+              <span class="specimen">
+                ОБЪЕКТ / 02
+              </span>
+              <img src="assets/viper.svg" alt="Художественная иллюстрация: рыба-гадюка">
+              <span class="art-note">
+                АВТОРСКАЯ СТИЛИЗАЦИЯ
+              </span>
+            </div>
+            <div class="creature-copy">
+              <span class="eyebrow">
+                ЗУБЫ БОЛЬШЕ, ЧЕМ ОЖИДАЕШЬ
+              </span>
+              <h3>
+                Рыба-гадюка
+              </h3>
+              <p>
+                Большая пасть и длинные тонкие зубы помогают этой рыбе удерживать добычу в толще воды.
+              </p>
+              <details>
+                <summary>
+                  Узнать больше
+                  <span>
+                    +
+                  </span>
+                </summary>
+                <p>
+                  Тихоокеанская рыба-гадюка — один из выразительных примеров глубоководного хищника. Светящиеся органы и необычная форма тела отражают жизнь в среде, где встреча с пищей не гарантирована.
+                </p>
+              </details>
+            </div>
+          </article>
+          <article class="creature-card" id="dumbo">
+            <div class="creature-art">
+              <span class="specimen">
+                ОБЪЕКТ / 03
+              </span>
+              <img src="assets/dumbo.svg" alt="Художественная иллюстрация: осьминог дамбо">
+              <span class="art-note">
+                АВТОРСКАЯ СТИЛИЗАЦИЯ
+              </span>
+            </div>
+            <div class="creature-copy">
+              <span class="eyebrow">
+                ПЛАВНИКИ, ПОХОЖИЕ НА УШИ
+              </span>
+              <h3>
+                Осьминог Дамбо
+              </h3>
+              <p>
+                Этот образ объединяет осьминогов с парой плавников, напоминающих большие уши. Они помогают двигаться в воде.
+              </p>
+              <details>
+                <summary>
+                  Узнать больше
+                  <span>
+                    +
+                  </span>
+                </summary>
+                <p>
+                  Прозвище связано с внешностью, а не с отдельным видом. Эти осьминоги используют движения плавников и рук, чтобы перемещаться, и встречаются на больших глубинах.
+                </p>
+              </details>
+            </div>
+          </article>
+          <article class="creature-card" id="squid">
+            <div class="creature-art">
+              <span class="specimen">
+                ОБЪЕКТ / 04
+              </span>
+              <img src="assets/squid.svg" alt="Художественная иллюстрация: гигантский кальмар">
+              <span class="art-note">
+                АВТОРСКАЯ СТИЛИЗАЦИЯ
+              </span>
+            </div>
+            <div class="creature-copy">
+              <span class="eyebrow">
+                БОЛЬШОЙ И РЕДКО НАБЛЮДАЕМЫЙ
+              </span>
+              <h3>
+                Гигантский кальмар
+              </h3>
+              <p>
+                Один из самых известных крупных беспозвоночных океана — и всё ещё непростой объект для наблюдения.
+              </p>
+              <details>
+                <summary>
+                  Узнать больше
+                  <span>
+                    +
+                  </span>
+                </summary>
+                <p>
+                  У кальмаров восемь рук и два более длинных ловчих щупальца. Гигантский кальмар долго был известен главным образом по найденным останкам; наблюдать его в естественной среде намного сложнее.
+                </p>
+              </details>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- Раздел: survival -->
+      <!-- Раздел: survival -->
+      <section class="survival section">
+        <span class="eyebrow">
+          02 / ПРИСПОСОБИТЬСЯ К ДРУГОМУ МИРУ
+        </span>
+        <h2>
+          КАК ЖИТЬ,
+          <br>
+          <em>
+            КОГДА ВОКРУГ ТЕМНО?
+          </em>
+        </h2>
+        <div class="survival-grid">
+          <article>
+            <b>
+              01
+            </b>
+            <h3>
+              Создать свой свет
+            </h3>
+            <p>
+              Свечение помогает некоторым животным привлекать добычу, подавать сигналы или отвлекать хищников. У разных видов оно выполняет разные задачи.
+            </p>
+          </article>
+          <article>
+            <b>
+              02
+            </b>
+            <h3>
+              Найти пищу
+            </h3>
+            <p>
+              В глубины опускаются органические частицы — «морской снег». Другие обитатели охотятся, а сообщества у источников опираются на химическую энергию.
+            </p>
+          </article>
+          <article>
+            <b>
+              03
+            </b>
+            <h3>
+              Выдержать давление
+            </h3>
+            <p>
+              На глубине давление растёт. Особенности тканей, клеток и обмена веществ позволяют глубоководным организмам жить там, где человеку нужны специальные аппараты.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- Раздел: ending -->
+      <!-- Раздел: ending -->
+      <section class="ending section">
+        <span class="eyebrow">
+          МЫ ТОЛЬКО ПРИОТКРЫЛИ ДВЕРЬ
+        </span>
+        <h2>
+          ЧЕМ ГЛУБЖЕ СМОТРИМ,
+          <br>
+          ТЕМ БОЛЬШЕ
+          <em>
+            ВОПРОСОВ.
+          </em>
+        </h2>
+        <p>
+          Вернись к погружению и посмотри на глубины уже по-другому.
+        </p>
+        <a class="button" href="index.html#zones">
+          ВЕРНУТЬСЯ К ПОГРУЖЕНИЮ
+        </a>
+      </section>
+    </main>
+    <!-- Подвал сайта -->
+    <!-- Подвал сайта -->
+    <footer class="ocean-footer">
+      <div class="footer-main">
+        <a class="brand" href="index.html">
+          ГЛУБЖЕ
+        </a>
+        <p>
+          Маленький путеводитель по большому океану.
+        </p>
+        <span class="design-credit">
+          ДИЗАЙН — КСЕНИЯ АГЕЕЧКИНА
+        </span>
+        <span class="footer-year">
+          © 2026
+        </span>
+      </div>
+      <div class="footer-sea" aria-hidden="true">
+        <div class="footer-fish">
+          <svg viewBox="0 0 160 70">
+            <defs>
+              <linearGradient id="footer-fish-color">
+                <stop stop-color="#6eaba6"/>
+                <stop offset="1" stop-color="#b8efd9"/>
+              </linearGradient>
+            </defs>
+            <path d="M45 35 Q80 4 132 35 Q80 65 45 35 L15 13 L22 35 L15 57Z" fill="url(#footer-fish-color)"/>
+            <path d="M78 19 L64 4 L100 18 M76 49 L62 65 L100 51" fill="#76b7ac"/>
+            <path d="M98 22 Q86 35 98 48" fill="none" stroke="#437d7b" stroke-width="2"/>
+            <circle cx="116" cy="30" r="3" fill="#05232d"/>
+            <path d="M123 38 L132 35" stroke="#417a72" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js">
+    </script>
+  </body>
+</html>
